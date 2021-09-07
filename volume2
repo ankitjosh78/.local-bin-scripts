@@ -1,3 +1,5 @@
+#!/bin/sh
+
 volstat="$(amixer get Master)"
 
 echo "$volstat" | grep "\[off\]" >/dev/null && printf "🔇\\n" && exit
